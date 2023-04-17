@@ -36,17 +36,8 @@ To run the project execute the following command:
 
 `mvn exec:java`
 
-# Testing the Project
+# Testing the project
 
 To run the JUnit4 test cases for stack implementation, execute the following command:
 
 `mvn test`
-
-# License
-
-This project is licensed under the MIT License. See the [LICENSE](./src/main/java/is/LICENSE) file for details.
-
-# UML Class Diagram
-
-This diagram contains the classes involved in the functionality Reiknivel. It was created using [umletino.com](https://www.umletino.com/umletino.html).
-![Class Diagram](src/main/resources/is/vidmot/Reiknivel-Class Diagram.png)
