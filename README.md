@@ -17,7 +17,7 @@ The project follows the standard Maven project structure, which is as follows:
 - `src/main/resources`: 
     - `reiknivel-view.fxml`: Provides information about the appearance of the calculator.
 
-- `src/test/java`:
+- `src/test/java`:Contains all the test cases for Reiknivel in a file called ReiknivelTest.
 
 # Maven Commands
 
@@ -50,3 +50,10 @@ This project is licensed under the MIT License. See the [LICENSE](./src/main/jav
 
 This diagram contains the classes involved in the functionality Reiknivel. It was created using [umletino.com](https://www.umletino.com/umletino.html).
 ![Class Diagram](src/main/resources/is/vidmot/Reiknivel-Class Diagram.png)
+
+
+# Patterns
+This project uses two patterens. 
+- `The Observer pattern` which is a design pattern that allows one or more objects to be notified of state changes in another object. It enables objects to maintain consistency and avoid duplication of code by automatically notifying all interested parties when a change occurs.
+- `The strategy pattern` is a behavioral design pattern that allows different algorithms to be selected and used at runtime based on specific requirements. It enables objects to vary their behavior dynamically and independently of their clients.
+- Both patterns are used in the [Reiknivel class](./src/main/java/is/vinnsla/Reiknivel).
