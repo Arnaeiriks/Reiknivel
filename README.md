@@ -14,7 +14,7 @@ The project follows the standard Maven project structure, which is as follows:
     - `is/vinnsla/Reiknivel.java`: Contains the methods for addidtion, subtraction, multiplication and division of integers.
     - `is/vinnsla/Reikna.java`: Functional interface for the calculation methods. Reads to integers and returns an integer.
 
-- `src/resources/java`: 
+- `src/main/resources`: 
     - `reiknivel-view.fxml`: Provides information about the appearance of the calculator.
 
 - `src/test/java`:
