@@ -47,10 +47,10 @@ public class ReiknivelTest {
         r.setTala(5);
         r.setVirki(0);
         r.setTala(7);
-        int result = r.jafntOg();
-        assertEquals(12, result);
-        assertEquals(0, r.getTala());
-        assertEquals(12, r.getUtkoma());
+        int utkoma = r.jafntOg();
+        assertEquals(12, utkoma);
+        assertEquals(12, r.getTala());
+        assertEquals(0, r.getUtkoma());
         assertEquals(r.virkjar[0], r.getVirki());
     }
 
@@ -66,13 +66,47 @@ public class ReiknivelTest {
     }
 
     @Test
-    public void testReiknaDeiltMedNull() {
+    public void testMargfaldaReikna() {
         Reiknivel r = new Reiknivel();
         r.setTala(5);
-        r.setUtkoma(10);
-        r.setVirki(3);
+        r.setVirki(2);
+        r.setTala(7);
         int utkoma = r.reikna();
-        assertEquals(0, utkoma);
+        assertEquals(35, utkoma);
     }
+
+    @Test
+    public void testDeilaReikna() {
+        Reiknivel r = new Reiknivel();
+        r.setTala(10);
+        r.setVirki(3);
+        r.setTala(2);
+        int utkoma = r.reikna();
+        assertEquals(5, utkoma);
+    }
+
+    @Test
+    public void testBaetaVidReikna() {
+        Reiknivel r = new Reiknivel();
+        r.setTala(10);
+        r.setVirki(0);
+        r.setTala(8);
+        int utkoma = r.reikna();
+        assertEquals(18, utkoma);
+    }
+
+    @Test
+    public void testDragFraReikna() {
+        Reiknivel r = new Reiknivel();
+        r.setTala(10);
+        r.setVirki(1);
+        r.setTala(2);
+        int utkoma = r.reikna();
+        assertEquals(8, utkoma);
+    }
+
+
+
+
 
 }

@@ -1,5 +1,6 @@
 package is.vidmot;
 
+import is.vinnsla.Observer;
 import is.vinnsla.Reiknivel;
 
 import javafx.event.ActionEvent;
@@ -9,13 +10,12 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
 
-public class ReiknivelController {
+public class ReiknivelController  {
 
     @FXML
     private TextField fxUttak;
 
     private Reiknivel reiknivel;
-
 
 
     public void initialize() {
